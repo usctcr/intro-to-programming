@@ -15,5 +15,5 @@ end
 
 result.each do |k, v|
   puts "------"
-  puts v.to_a
+  puts vcd
 end
