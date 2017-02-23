@@ -33,3 +33,11 @@ puts "----"
 #Get rid of duplicates without targeting a specific value
 puts arr.uniq.to_s
 puts "----"
+
+#Take an array with multi-word entries and make them all single-word entries
+a = ['white snow', 'winter wonderland', 'melting ice',
+     'slippery sidewalk', 'salted roads', 'white trees']
+
+newarray = a.map {|phrases| phrases.split}
+flatarray = newarray.flatten
+p flatarray

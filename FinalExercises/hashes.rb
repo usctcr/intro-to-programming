@@ -37,10 +37,15 @@ puts contacts.to_s
 puts "----"
 
 #Find specific items from each contact
-def findcontact(a,b)
-  info = contacts[a][b].to_s
-  puts "#{a}'s #{b} is #{info}"
+
+puts "Sally's number is #{contacts["Sally Johnson"][:phone]}"
+
+#Delete words starting with "s"
+arr = ['snow', 'winter', 'ice', 'slippery', 'salted roads', 'white trees']
+
+arr.each do
+  if arr.delete_if {|word| word.start_with?("s", "w")}
+  end
+  
+puts arr.to_s
 end
-
-findcontact("Joe Smith", :email)
-
